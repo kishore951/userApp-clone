@@ -8,6 +8,20 @@ import { Component, OnInit } from '@angular/core';
 export class SignInComponent implements OnInit {
 
   constructor() { }
+  userName=""
+  password=""
+  status:boolean=false
+  readValues=()=>{
+    let data ={
+      "userName":this.userName,
+      "password":this.password
+    }
+    console.log(data)
+    this.userName=""
+ this.password=""
+ this.status=true
+    
+  }
 
   ngOnInit(): void {
   }
